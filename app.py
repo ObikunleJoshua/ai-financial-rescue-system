@@ -9,6 +9,40 @@ import plotly.express as px
 st.set_page_config(page_title="Financial Rescue System", layout="wide")
 
 # ---------------------------
+# AUTO-SETUP DATABASE
+# ---------------------------
+import os
+
+from src import (
+    generate_financial_data,
+    db_setup_financial,
+    load_financial_data,
+    transform_financial_data,
+    train_model,
+    generate_alerts
+)
+
+conn = sqlite3.connect("financial_monitoring.db")
+cursor = conn.cursor()
+
+cursor.execute("""
+SELECT name FROM sqlite_master
+WHERE type='table' AND name='financial_metrics';
+""")
+
+table_exists = cursor.fetchone()
+
+if not table_exists:
+    db_setup_financial.main()
+    generate_financial_data.main()
+    load_financial_data.main()
+    transform_financial_data.main()
+    train_model.main()
+    generate_alerts.main()
+
+conn.close()
+
+# ---------------------------
 # LOAD DATA
 # ---------------------------
 conn = sqlite3.connect("financial_monitoring.db")
