@@ -7,6 +7,9 @@ An AI-driven financial monitoring system designed to detect profit risks, identi
 ## Dashboard Preview
 
 ![Dashboard](images/dashboard.png)
+![Dashboard](images/recommended_actions.png)
+![Dashboard](images/profit-trends.png)
+![Dashboard](images/regional_performance.png)
 
 ---
 
