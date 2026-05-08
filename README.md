@@ -25,7 +25,7 @@ It combines data engineering, KPI analysis, machine learning, and dashboarding i
 
 ---
 
-# 📌 What the System Does
+# What the System Does
 
 The system simulates financial activity across multiple business regions and tracks how performance changes over time.
 
@@ -44,7 +44,7 @@ Using this information, the system:
 
 ---
 
-# 🧠 Why I Built This
+# Why I Built This
 
 A lot of data projects stop at visualization.
 
@@ -58,7 +58,7 @@ raw data → processing → prediction → action.
 
 ---
 
-# ⚙️ How the Project Works
+# How the Project Works
 
 The workflow follows a layered pipeline structure.
 
@@ -120,7 +120,7 @@ All outputs are displayed through an interactive Streamlit dashboard for easier 
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 ai-financial-rescue-system/
@@ -145,7 +145,7 @@ ai-financial-rescue-system/
 
 ---
 
-# ▶️ Running the Project
+# Running the Project
 
 ## Install dependencies
 
@@ -176,7 +176,7 @@ python -m streamlit run app.py
 
 ---
 
-# 📈 Example Questions This System Can Answer
+# Example Questions This System Can Answer
 
 - Which regions are becoming financially unstable?
 - Are operational costs growing too quickly?
@@ -185,7 +185,7 @@ python -m streamlit run app.py
 
 ---
 
-# 🚀 Future Improvements
+# Future Improvements
 
 Some areas I would improve next:
 - real-time API ingestion,
@@ -197,6 +197,6 @@ Some areas I would improve next:
 
 ---
 
-## 👤 Author
+## Author
 
 **Joshua OBIKUNLE**
